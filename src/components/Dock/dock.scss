@@ -1,0 +1,29 @@
+.dock {
+    position: fixed;
+    bottom: 50%;
+    left: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-inline: .4rem;
+    padding-block: .6rem;
+    transform: translate(0, 50%);
+    border-radius: .3rem;
+
+    .icon {
+        font-size: 2.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        aspect-ratio: 1/1;
+        transition: all 0.1s linear;
+        margin-bottom: .6rem;
+    }
+    
+    .cli {
+        margin-bottom: auto;
+    }
+
+    .icon:hover {
+        transform: scale(1.1) translateY(10%);
+    }
+}

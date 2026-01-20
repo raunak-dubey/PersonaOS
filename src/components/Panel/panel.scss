@@ -1,0 +1,22 @@
+.panel {
+    width: 99vw;
+    margin: auto;
+    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-block: 0.2rem;
+    padding-inline: 0.75rem;
+    border-radius: .3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    .tray {
+        display: flex;
+        gap: .75rem;
+    }
+}
