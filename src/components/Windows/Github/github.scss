@@ -1,0 +1,154 @@
+.github-window {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+  color: #e6e6e6;
+  font-family: "Inter", system-ui, sans-serif;
+  gap: 0.5rem;
+}
+
+/* ───────── Toolbar ───────── */
+
+.github-toolbar {
+  display: flex;
+  gap: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #1a1a1a;
+
+  button {
+    background: #0c0c0c;
+    border: 1px solid #1f1f1f;
+    color: #bdbdbd;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.55rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    &:hover {
+      background: #141414;
+      color: #e6e6e6;
+    }
+
+    &.active {
+      background: #1a1a1a;
+      border-color: #2a2a2a;
+      color: #ffffff;
+    }
+  }
+}
+
+/* ───────── Loading ───────── */
+
+.loading {
+  font-size: 0.75rem;
+  color: #9a9a9a;
+  padding: 0.75rem 0.25rem;
+}
+
+/* ───────── Repo List ───────── */
+
+.repo-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-right: 0.25rem;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* ───────── Repo Card ───────── */
+
+.repo-card {
+  background: #0c0c0c;
+  border: 1px solid #1a1a1a;
+  border-radius: 0.35rem;
+  padding: 0.55rem 0.65rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border 0.15s ease;
+
+  &:hover {
+    background: #121212;
+    border-color: #2b2b2b;
+  }
+}
+
+/* ───────── Header ───────── */
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.repo-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #58a6ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ───────── Visibility ───────── */
+
+.repo-visibility {
+  font-size: 0.6rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid #2a2a2a;
+  color: #7ee787;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ───────── Description ───────── */
+
+.repo-description {
+  font-size: 0.72rem;
+  color: #b3b3b3;
+  margin: 0.35rem 0 0.45rem;
+  line-height: 1.35;
+}
+
+/* ───────── Meta ───────── */
+
+.repo-meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.68rem;
+  color: #8a8a8a;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .language {
+    color: #e6c07b;
+  }
+
+  .stars {
+    color: #d19a66;
+  }
+
+  .updated {
+    opacity: 0.85;
+  }
+}
