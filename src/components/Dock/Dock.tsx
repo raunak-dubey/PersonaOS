@@ -6,6 +6,9 @@ const Dock = () => {
             <div className="icon github" onClick={() => window.open("https://www.github.com/raunak-dubey", "_blank")}>
                 <i className="ri-github-fill"></i>
             </div>
+            <div className="icon notes" onClick={() => window.open("https://www.github.com/raunak-dubey", "_blank")}>
+                <i className="ri-booklet-fill"></i>
+            </div>
             <div className="icon mail" onClick={() => window.open("mailto:raunak18@zohomail.in", "_blank")}>
                <i className="ri-mail-fill"></i>
             </div>

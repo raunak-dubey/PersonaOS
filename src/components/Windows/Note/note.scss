@@ -1,0 +1,22 @@
+.note-window {
+    padding-inline: 1rem;
+    font-size: 1.05rem;
+
+    pre {
+        background-color: transparent !important;
+
+        &::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #2a2a2a;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    }
+}
