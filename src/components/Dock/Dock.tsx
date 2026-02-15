@@ -9,11 +9,8 @@ const Dock = () => {
             <div className="icon notes" onClick={() => window.open("https://www.github.com/raunak-dubey", "_blank")}>
                 <i className="ri-booklet-fill"></i>
             </div>
-            <div className="icon mail" onClick={() => window.open("mailto:raunak18@zohomail.in", "_blank")}>
+            <div className="icon mail" onClick={() => window.open("mailto:raunak18@proton.me", "_blank")}>
                <i className="ri-mail-fill"></i>
-            </div>
-            <div className="icon spotify">
-                <i className="ri-spotify-fill"></i>
             </div>
             <div
                 onClick={() => window.open("https://www.linkedin.com/in/raunak-dubey-10946338b/", "_blank")}
